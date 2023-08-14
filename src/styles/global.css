@@ -24,11 +24,11 @@
 	}
 
 	html {
-		@apply h-full scroll-smooth border-t-2 border-textColor;
+		@apply h-full scroll-smooth border-textColor;
 	}
 
 	html body {
-		@apply mx-auto flex h-full max-w-3xl flex-col bg-bgColor px-8 pt-16 font-mono text-sm font-normal text-textColor antialiased;
+		@apply mx-auto flex h-full max-w-5xl flex-col bg-bgColor px-8 pt-16 font-mono text-sm font-normal text-textColor antialiased;
 	}
 }
 

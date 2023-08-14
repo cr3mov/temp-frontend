@@ -4,15 +4,22 @@ import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 import prefetch from "@astrojs/prefetch";
 import remarkUnwrapImages from "remark-unwrap-images";
+import remarkMath from "remark-math";
+import rehypeMathjax from "rehype-mathjax";
 
 // https://astro.build/config
 export default defineConfig({
-	// ! Please remember to replace the following site property with your own domain
-	site: "https://astro-theme-cactus.netlify.app/",
+	site: "https://cr3.mov/",
 	markdown: {
-		remarkPlugins: [remarkUnwrapImages],
+		remarkPlugins: [
+			remarkUnwrapImages,
+			remarkMath
+		],
+		rehypePlugins: [
+			rehypeMathjax
+		],
 		shikiConfig: {
-			theme: "dracula",
+			theme: "slack-dark",
 			wrap: true,
 		},
 	},

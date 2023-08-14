@@ -39,7 +39,7 @@ jobs:
         package-manager: npm  # cry about it https://i.imgur.com/AFdIEgc.png
 
   deploy:
-    needs: build
+    needs: sync
     runs-on: ubuntu-latest
 
     environment:
